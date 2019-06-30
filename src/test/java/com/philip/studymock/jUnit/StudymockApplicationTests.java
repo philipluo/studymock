@@ -1,4 +1,4 @@
-package com.philip.studymock;
+package com.philip.studymock.jUnit;
 
 import com.philip.studymock.service.OrderService;
 import org.junit.Test;

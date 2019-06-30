@@ -1,5 +1,7 @@
-package com.philip.studymock.service;
+package com.philip.studymock.jUnit.service;
 
+import com.philip.studymock.service.CustomerService;
+import com.philip.studymock.service.OrderService;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Assert;
 import org.junit.Test;

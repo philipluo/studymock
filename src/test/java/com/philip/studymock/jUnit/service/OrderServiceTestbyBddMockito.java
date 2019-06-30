@@ -1,5 +1,6 @@
-package com.philip.studymock.service;
+package com.philip.studymock.jUnit.service;
 
+import com.philip.studymock.service.OrderService;
 import com.philip.studymock.util.StaticHelper;
 import lombok.extern.slf4j.Slf4j;
 import mockit.Mock;

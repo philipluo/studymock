@@ -1,4 +1,4 @@
-package com.philip.studymock.singles;
+package com.philip.studymock.jUnit.service.singles;
 
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;

@@ -1,4 +1,4 @@
-package com.philip.studymock.singles;
+package com.philip.studymock.jUnit.service.singles;
 
 import org.junit.Assert;
 import org.junit.Test;
