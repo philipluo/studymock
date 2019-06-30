@@ -17,4 +17,12 @@ public class OrderServiceImpl implements OrderService {
         String custName = customerService.getCustomerByNo(110486);
         return custName;
     }
+
+    @Override
+    public String getOrderSourceByCustNo(Integer custNo) {
+        String custName = customerService.getCustomerByNo(custNo);
+        return custName;
+    }
+
+
 }

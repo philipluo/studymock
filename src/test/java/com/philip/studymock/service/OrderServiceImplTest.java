@@ -4,8 +4,6 @@ import lombok.extern.slf4j.Slf4j;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.mockito.InjectMocks;
-import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -31,6 +29,7 @@ public class OrderServiceImplTest {
 //        Mockito.when(orderService.getOrderSource()).thenReturn("Julia");
         Mockito.when(customerService.getCustomerByNo(Mockito.anyInt())).thenReturn("Julia");
         String source = orderService.getOrderSource();
+        Mockito.verify(customerService, Mockito.times(1)).getCustomerByNo(110486);
         log.info(source);
         Assert.assertTrue("Julia".equals(source));
 

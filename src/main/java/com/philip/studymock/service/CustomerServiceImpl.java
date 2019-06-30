@@ -1,5 +1,6 @@
 package com.philip.studymock.service;
 
+import com.philip.studymock.util.StaticHelper;
 import org.springframework.stereotype.Service;
 
 /**
@@ -11,12 +12,13 @@ public class CustomerServiceImpl implements  CustomerService {
     @Override
     public String getCustomerByNo(Integer custNo) {
         String name;
+        Integer randomCustPhoneNo = StaticHelper.getRandomInteger();
         if(custNo==110486){
             name = "SYNNEX DEMO";
         }else{
             name = "NOT Found";
         }
-        return name;
+        return randomCustPhoneNo + "-" + name;
     }
 
 }

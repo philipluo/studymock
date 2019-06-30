@@ -6,5 +6,6 @@ package com.philip.studymock.service;
 public interface OrderService {
 
     String getOrderSource();
+    String getOrderSourceByCustNo(Integer custNo);
 
 }
